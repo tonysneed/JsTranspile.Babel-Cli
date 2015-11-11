@@ -1,0 +1,16 @@
+{
+  "name": "jstranspile-cli",
+  "version": "1.0.0",
+  "description": "Transpiling ES6 to ES5 with Babel from the command-line",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tony Sneed",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.1.4",
+    "babel-preset-es2015": "^6.1.4"
+  }
+}
