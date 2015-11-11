@@ -52,6 +52,20 @@
 ## Write ES6 Code
 
 1. Add js files using ES6 syntax.
+
+	```js
+	var age = 55;
+	
+	for (let i = 0; i < 5; i++) {
+		age += 5;
+	}
+	
+	try {
+		console.log(i);
+	} catch (e) {
+		console.log('i is out of scope due to using let!');
+	}
+	```
 	
 2. Execute 'babel' from the command-line.
 	- View the transpiled code in the command-line output.
@@ -59,3 +73,21 @@
 	```shell
 	babel let.js
 	```
+
+	- The following output should be shown:
+	
+	```js
+	'use strict';
+	
+	var age = 55;
+	
+	for (var _i = 0; _i < 5; _i++) {
+		age += 5;
+	}
+	
+	try {
+		console.log(i);
+	} catch (e) {
+		console.log('i is out of scope due to using let!');
+	}
+	```	
